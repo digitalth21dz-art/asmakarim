@@ -843,6 +843,34 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
         }
 
+        .notice-copy {
+            max-width: 850px;
+            padding: 25px 30px;
+            background: rgba(255, 255, 255, .18);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(201, 169, 110, .35);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+            font-size: clamp(1.05rem, 2vw, 1.3rem);
+            line-height: 1.9;
+            text-align: center;
+        }
+
+        .notice-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(16px, 5vw, 48px);
+            width: 100%;
+        }
+
+        .notice-icons img {
+            display: block;
+            width: clamp(100px, 12vw, 260px);
+            aspect-ratio: 1;
+            object-fit: contain;
+        }
+
         .info-item {
             display: flex;
             align-items: center;
@@ -1518,6 +1546,22 @@
 
         </section>
 
+        <section class="countdown-section notice-section">
+            <h2 class="countdown-title reveal-title" data-i18n="notice_title">
+                Quelques précisions pour cette journée spéciale
+            </h2>
+            <p class="notice-copy reveal-text-line" data-i18n="notice_text">
+                Afin de préserver l’intimité de ce moment, nous vous prions de respecter l’interdiction de photographier la mariée.
+                Nous vous informons également que la réception est réservée aux adultes et que le nombre de places étant limité,
+                l’invitation est strictement personnelle. Merci pour votre compréhension et votre bienveillance.
+            </p>
+            <div class="notice-icons reveal-text-line" aria-hidden="true">
+                <img src="icon1.png" alt="" aria-hidden="true" loading="lazy">
+                <img src="icon2.png" alt="" aria-hidden="true" loading="lazy">
+                <img src="icon3.png" alt="" aria-hidden="true" loading="lazy">
+            </div>
+        </section>
+
 
 
         <!-- ====== SECTION RSVP ====== -->
@@ -1724,6 +1768,8 @@
                     heure_label: 'Heure',
                     heure_value: '20h00',
                     date_label: 'Date',
+                    notice_title: 'Quelques précisions pour cette journée spéciale',
+                    notice_text: 'Afin de préserver l’intimité de ce moment, nous vous prions de respecter l’interdiction de photographier la mariée. Nous vous informons également que la réception est réservée aux adultes et que le nombre de places étant limité, l’invitation est strictement personnelle. Merci pour votre compréhension et votre bienveillance.',
                     message_1: "Au plaisir de vous accueillir et de partager avec vous ce merveilleux moment.",
                     date_value: ' 09 décembre 2026',
                     itineraire_text: 'Cliquez sur le bouton ci-dessous pour ouvrir l\'itinéraire vers la salle des fêtes.',
@@ -1755,6 +1801,8 @@
                     heure_label: 'الساعة',
                     heure_value: '20:00',
                     date_label: 'التاريخ',
+                    notice_title: 'بعض التوضيحات بخصوص هذا اليوم المميز:',
+                    notice_text: 'حرصاً على خصوصية هذه المناسبة، نرجو منكم الالتزام بعدم تصوير العروس. كما نود إعلامكم بأن حفل الاستقبال مخصص للبالغين فقط، ونظراً لمحدودية الأماكن، فإن الدعوة شخصية بحتة. نشكر لكم تفهمكم ولطفكم.',
                     message_1: "يسعدنا استقبالكم ومشاركتكم أجمل لحظات الفرحة",
                     date_value: ' 09 ديسمبر 2026',
                     itineraire_text: 'انقر على الزر أدناه لفتح المسار إلى قاعة الأفراح',
